@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Air Express - Delivery Service Platform
 
-## Getting Started
+Modern delivery service application built for fast, reliable parcel delivery in Agadez, Niger.
 
-First, run the development server:
+![Air Express Banner](public/og-image.jpg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- **Customer Portal**: Easy order placement with real-time tracking
+- **Admin Dashboard**: Comprehensive order management system
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Modern UI**: Built with Tailwind CSS and Framer Motion animations
+- **SEO Optimized**: Complete metadata, sitemap, and social media integration
+- **Type Safe**: Full TypeScript support for robust development
+- **Production Ready**: Security headers, error handling, and performance optimizations
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) with App Router
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Database**: [Prisma ORM](https://www.prisma.io/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Maps**: [React Leaflet](https://react-leaflet.js.org/)
+
+## 📋 Prerequisites
+
+- Node.js 20.x or higher
+- npm, yarn, pnpm, or bun
+- PostgreSQL database (for production)
+
+## 🔧 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd airexpress
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   
+   Copy `.env.example` to `.env` and configure your environment variables:
+   ```bash
+   cp .env.example .env
+   ```
+
+   Update the following variables in `.env`:
+   - `DATABASE_URL`: Your PostgreSQL connection string
+   - `NEXT_PUBLIC_APP_URL`: Your application URL
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) to view the application.
+
+## 📁 Project Structure
+
+```
+airexpress/
+├── app/                    # Next.js app directory
+│   ├── _components/        # Reusable components (Nav, Footer, etc.)
+│   ├── about/             # About page
+│   ├── admin/             # Admin dashboard and settings
+│   ├── commander/         # Order placement page
+│   ├── contact/           # Contact page
+│   ├── services/          # Services page
+│   ├── error.tsx          # Custom error boundary
+│   ├── layout.tsx         # Root layout with metadata
+│   ├── not-found.tsx      # Custom 404 page
+│   ├── page.tsx           # Homepage
+│   ├── robots.txt/        # SEO robots.txt route
+│   └── sitemap.ts         # Dynamic sitemap generation
+├── public/                # Static assets (images, logos)
+├── .env.example           # Environment variables template
+├── next.config.ts         # Next.js configuration
+├── vercel.json            # Vercel deployment configuration
+├── package.json           # Dependencies and scripts
+└── tsconfig.json          # TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions on Vercel.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Quick Deploy to Vercel
 
-## Learn More
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=YOUR_REPO_URL)
 
-To learn more about Next.js, take a look at the following resources:
+1. Push code to GitHub
+2. Import project to Vercel
+3. Configure environment variables
+4. Deploy!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📜 Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Deploy on Vercel
+## 🌍 Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+See `.env.example` for all required environment variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `DATABASE_URL` - PostgreSQL database connection string
+- `NODE_ENV` - Environment (development/production)
+- `NEXT_PUBLIC_APP_URL` - Public application URL
+
+## 🔒 Security Features
+
+- Security headers (HSTS, CSP, XSS Protection)
+- Input validation and sanitization
+- CORS configuration
+- Environment variable protection
+
+## 📱 Features by Section
+
+### Customer Features
+- Service browsing and selection
+- Online order placement
+- Contact form
+- Responsive mobile experience
+
+### Admin Features
+- Order management dashboard
+- Status tracking and updates
+- Customer information management
+- Order filtering and search
+- Settings configuration
+
+## 🎨 Design Philosophy
+
+- **Clean & Modern**: Professional aesthetic with orange accent colors
+- **User-Friendly**: Intuitive navigation and clear CTAs
+- **Accessible**: WCAG compliant design patterns
+- **Performance**: Optimized images and lazy loading
+
+## 📄 License
+
+Copyright © 2024 Air Express. All rights reserved.
+
+## 👥 Support
+
+For support, email support@airexpress.com or visit [airexpress.com/contact](https://airexpress.com/contact).
+
+---
+
+**Built with ❤️ by the Air Express Team**
