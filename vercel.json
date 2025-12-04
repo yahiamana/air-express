@@ -7,17 +7,6 @@
     "regions": [
         "iad1"
     ],
-    "env": {
-        "DATABASE_URL": "@database_url",
-        "NODE_ENV": "production",
-        "NEXT_PUBLIC_APP_URL": "@next_public_app_url"
-    },
-    "build": {
-        "env": {
-            "DATABASE_URL": "@database_url",
-            "NEXT_PUBLIC_APP_URL": "@next_public_app_url"
-        }
-    },
     "headers": [
         {
             "source": "/(.*)",

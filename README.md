@@ -43,18 +43,7 @@ Modern delivery service application built for fast, reliable parcel delivery in 
    npm install
    ```
 
-3. **Set up environment variables**
-   
-   Copy `.env.example` to `.env` and configure your environment variables:
-   ```bash
-   cp .env.example .env
-   ```
-
-   Update the following variables in `.env`:
-   - `DATABASE_URL`: Your PostgreSQL connection string
-   - `NEXT_PUBLIC_APP_URL`: Your application URL
-
-4. **Run the development server**
+3. **Run the development server**
    ```bash
    npm run dev
    ```
@@ -106,13 +95,6 @@ See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions on Ver
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-## 🌍 Environment Variables
-
-See `.env.example` for all required environment variables:
-
-- `DATABASE_URL` - PostgreSQL database connection string
-- `NODE_ENV` - Environment (development/production)
-- `NEXT_PUBLIC_APP_URL` - Public application URL
 
 ## 🔒 Security Features
 
